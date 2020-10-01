@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,15 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lXM-Zf-2fh">
-                                <rect key="frame" x="21" y="237" width="278" height="94"/>
+                                <rect key="frame" x="21" y="237" width="278.5" height="94"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какое вы животное?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a26-g4-ekG">
-                                        <rect key="frame" x="0.0" y="0.0" width="278" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="278.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gou-N6-uJ3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gou-N6-uJ3">
                                         <rect key="frame" x="61" y="52" width="156" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="156" id="oUG-Lv-79m"/>
@@ -62,7 +64,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NjL-eH-d30" secondAttribute="bottom" constant="20" id="2FP-N4-AjP"/>
                             <constraint firstItem="kS6-fd-aFq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2bx-LR-9vR"/>
@@ -77,7 +80,6 @@
                             <constraint firstItem="NjL-eH-d30" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e7R-Nr-p47"/>
                             <constraint firstItem="kS6-fd-aFq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="t0n-yQ-PPA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -95,19 +97,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="89M-lU-HzZ">
                                 <rect key="frame" x="20" y="232" width="280" height="168"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQo-qR-dIO">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQo-qR-dIO">
                                         <rect key="frame" x="117" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD4-iR-IRh">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD4-iR-IRh">
                                         <rect key="frame" x="117" y="46" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZR-DG-3ny">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZR-DG-3ny">
                                         <rect key="frame" x="117" y="92" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgh-X0-xyP">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgh-X0-xyP">
                                         <rect key="frame" x="117" y="138" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
@@ -172,7 +174,7 @@
                                             </switch>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZs-a1-3WB">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZs-a1-3WB">
                                         <rect key="frame" x="0.0" y="156" width="280" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Ответить"/>
@@ -202,31 +204,40 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWK-76-Fon">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWK-76-Fon">
                                         <rect key="frame" x="0.0" y="72" width="280" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Ответить"/>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Любите ли вы поездки на машине?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R13-B7-hVP">
+                                <rect key="frame" x="20" y="111" width="280" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4sa-5q-xaz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="89M-lU-HzZ" firstAttribute="leading" secondItem="4sa-5q-xaz" secondAttribute="leading" constant="20" id="0St-6D-FyV"/>
+                            <constraint firstItem="R13-B7-hVP" firstAttribute="top" secondItem="4sa-5q-xaz" secondAttribute="top" constant="20" id="2wq-rh-X0i"/>
                             <constraint firstItem="4sa-5q-xaz" firstAttribute="trailing" secondItem="fxK-7k-Bdg" secondAttribute="trailing" constant="20" id="F1x-7w-KVz"/>
+                            <constraint firstItem="4sa-5q-xaz" firstAttribute="trailing" secondItem="R13-B7-hVP" secondAttribute="trailing" constant="20" id="LRN-mT-58G"/>
                             <constraint firstItem="fxK-7k-Bdg" firstAttribute="leading" secondItem="4sa-5q-xaz" secondAttribute="leading" constant="20" id="T2k-nS-gIj"/>
                             <constraint firstItem="4sa-5q-xaz" firstAttribute="trailing" secondItem="89M-lU-HzZ" secondAttribute="trailing" constant="20" id="ZIN-Qa-Erh"/>
                             <constraint firstItem="4sa-5q-xaz" firstAttribute="trailing" secondItem="w13-Rv-XAH" secondAttribute="trailing" constant="20" id="o2L-YO-uaR"/>
                             <constraint firstItem="89M-lU-HzZ" firstAttribute="centerY" secondItem="nXl-Gy-WYh" secondAttribute="centerY" constant="32" id="oAM-g1-rmC"/>
                             <constraint firstItem="fxK-7k-Bdg" firstAttribute="centerY" secondItem="nXl-Gy-WYh" secondAttribute="centerY" constant="32" id="pTk-ix-4Kx"/>
+                            <constraint firstItem="R13-B7-hVP" firstAttribute="leading" secondItem="4sa-5q-xaz" secondAttribute="leading" constant="20" id="pxL-gQ-L9u"/>
                             <constraint firstItem="w13-Rv-XAH" firstAttribute="leading" secondItem="4sa-5q-xaz" secondAttribute="leading" constant="20" id="xLn-D8-3aa"/>
                             <constraint firstItem="w13-Rv-XAH" firstAttribute="centerY" secondItem="nXl-Gy-WYh" secondAttribute="centerY" constant="20" id="xyX-Rq-qNU"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="4sa-5q-xaz"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="89M-lU-HzZ"/>
-                                <exclude reference="fxK-7k-Bdg"/>
+                                <exclude reference="w13-Rv-XAH"/>
                             </mask>
                         </variation>
                     </view>
@@ -271,13 +282,13 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3Qi-xM-1cb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="BZg-9d-942" secondAttribute="trailing" constant="20" id="gEC-ye-MB0"/>
                             <constraint firstItem="BZg-9d-942" firstAttribute="centerY" secondItem="Vf4-DA-NTg" secondAttribute="centerY" constant="32" id="nmD-8H-vZo"/>
                             <constraint firstItem="BZg-9d-942" firstAttribute="leading" secondItem="3Qi-xM-1cb" secondAttribute="leading" constant="20" id="wtT-8f-XPT"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="3Qi-xM-1cb"/>
                     </view>
                     <navigationItem key="navigationItem" title="Результаты" id="WoU-bv-IbN">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="gbI-xM-6o1"/>
@@ -310,4 +321,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="FZq-Ie-Gtu"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
