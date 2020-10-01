@@ -16,6 +16,8 @@
 		28A42294252496A6005C0EE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A42293252496A6005C0EE2 /* Assets.xcassets */; };
 		28A42297252496A6005C0EE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A42295252496A6005C0EE2 /* LaunchScreen.storyboard */; };
 		28F5AF032525E70F007AE494 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F5AF022525E70F007AE494 /* ResponseType.swift */; };
+		28F5AF062525E820007AE494 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F5AF052525E820007AE494 /* Answer.swift */; };
+		28F5AF092525E8B8007AE494 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F5AF082525E8B8007AE494 /* AnimalType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		28A42296252496A6005C0EE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A42298252496A6005C0EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28F5AF022525E70F007AE494 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		28F5AF052525E820007AE494 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		28F5AF082525E8B8007AE494 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				2822E9152525E27900268C57 /* Question.swift */,
 				28F5AF022525E70F007AE494 /* ResponseType.swift */,
+				28F5AF052525E820007AE494 /* Answer.swift */,
+				28F5AF082525E8B8007AE494 /* AnimalType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 				28A4228F2524969F005C0EE2 /* ViewController.swift in Sources */,
 				2822E9162525E27900268C57 /* Question.swift in Sources */,
 				28A4228B2524969F005C0EE2 /* AppDelegate.swift in Sources */,
+				28F5AF062525E820007AE494 /* Answer.swift in Sources */,
 				28A4228D2524969F005C0EE2 /* SceneDelegate.swift in Sources */,
 				28F5AF032525E70F007AE494 /* ResponseType.swift in Sources */,
+				28F5AF092525E8B8007AE494 /* AnimalType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
