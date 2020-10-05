@@ -9,7 +9,7 @@
 struct Question {
     var text: String
     var type: ResponseType
-    var ansvers: [Answer]
+    var answers: [Answer]
 }
 
 extension Question {
@@ -18,7 +18,7 @@ extension Question {
             Question(
                 text: "Какую пищу вы предпочитаете?",
                 type: .single,
-                ansvers: [
+                answers: [
                     Answer(text: "Стейк", type: .dog),
                     Answer(text: "Рыба", type: .cat),
                     Answer(text: "Морковь", type: .rabbit),
@@ -28,7 +28,7 @@ extension Question {
             Question(
                 text: "Что вам больше нравится?",
                 type: .multiple,
-                ansvers: [
+                answers: [
                     Answer(text: "Плавать", type: .dog),
                     Answer(text: "Спать", type: .cat),
                     Answer(text: "Обниматься", type: .rabbit),
@@ -38,7 +38,7 @@ extension Question {
             Question(
                 text: "Любите ли вы поездки на машине?",
                 type: .ranged,
-                ansvers: [
+                answers: [
                     Answer(text: "Ненавижу", type: .dog),
                     Answer(text: "Нервничаю", type: .cat),
                     Answer(text: "Не замечаю", type: .rabbit),

@@ -11,10 +11,12 @@
 		2822E91D2525E45F00268C57 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2822E91C2525E45F00268C57 /* Default-568h@2x.png */; };
 		28A4228B2524969F005C0EE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4228A2524969F005C0EE2 /* AppDelegate.swift */; };
 		28A4228D2524969F005C0EE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4228C2524969F005C0EE2 /* SceneDelegate.swift */; };
-		28A4228F2524969F005C0EE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4228E2524969F005C0EE2 /* ViewController.swift */; };
+		28A4228F2524969F005C0EE2 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4228E2524969F005C0EE2 /* IntroductionViewController.swift */; };
 		28A422922524969F005C0EE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A422902524969F005C0EE2 /* Main.storyboard */; };
 		28A42294252496A6005C0EE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A42293252496A6005C0EE2 /* Assets.xcassets */; };
 		28A42297252496A6005C0EE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A42295252496A6005C0EE2 /* LaunchScreen.storyboard */; };
+		28DE3DFB252B11E5008856CE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE3DFA252B11E5008856CE /* QuestionViewController.swift */; };
+		28DE3DFE252B1253008856CE /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE3DFD252B1253008856CE /* ResultsViewController.swift */; };
 		28F5AF032525E70F007AE494 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F5AF022525E70F007AE494 /* ResponseType.swift */; };
 		28F5AF062525E820007AE494 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F5AF052525E820007AE494 /* Answer.swift */; };
 		28F5AF092525E8B8007AE494 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F5AF082525E8B8007AE494 /* AnimalType.swift */; };
@@ -26,11 +28,13 @@
 		28A422872524969F005C0EE2 /* CW4 - Personal Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CW4 - Personal Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A4228A2524969F005C0EE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28A4228C2524969F005C0EE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28A4228E2524969F005C0EE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28A4228E2524969F005C0EE2 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		28A422912524969F005C0EE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28A42293252496A6005C0EE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28A42296252496A6005C0EE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A42298252496A6005C0EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DE3DFA252B11E5008856CE /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		28DE3DFD252B1253008856CE /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		28F5AF022525E70F007AE494 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 		28F5AF052525E820007AE494 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		28F5AF082525E8B8007AE494 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
@@ -50,7 +54,9 @@
 		2822E9172525E2A600268C57 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				28A4228E2524969F005C0EE2 /* ViewController.swift */,
+				28A4228E2524969F005C0EE2 /* IntroductionViewController.swift */,
+				28DE3DFA252B11E5008856CE /* QuestionViewController.swift */,
+				28DE3DFD252B1253008856CE /* ResultsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,7 +155,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Sergey Tkachenko";
 				TargetAttributes = {
 					28A422862524969F005C0EE2 = {
@@ -194,12 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A4228F2524969F005C0EE2 /* ViewController.swift in Sources */,
+				28A4228F2524969F005C0EE2 /* IntroductionViewController.swift in Sources */,
 				2822E9162525E27900268C57 /* Question.swift in Sources */,
 				28A4228B2524969F005C0EE2 /* AppDelegate.swift in Sources */,
 				28F5AF062525E820007AE494 /* Answer.swift in Sources */,
 				28A4228D2524969F005C0EE2 /* SceneDelegate.swift in Sources */,
+				28DE3DFE252B1253008856CE /* ResultsViewController.swift in Sources */,
 				28F5AF032525E70F007AE494 /* ResponseType.swift in Sources */,
+				28DE3DFB252B11E5008856CE /* QuestionViewController.swift in Sources */,
 				28F5AF092525E8B8007AE494 /* AnimalType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +260,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -312,6 +321,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
