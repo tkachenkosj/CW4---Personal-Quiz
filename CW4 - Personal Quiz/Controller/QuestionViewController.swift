@@ -22,6 +22,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet var multipleSwitches: [UISwitch]!
     
     @IBOutlet var rangedStackView: UIStackView!
+    @IBOutlet var rangedSlider: UISlider!
     @IBOutlet var rangedLabels: [UILabel]!
     
     @IBOutlet var questionProgressView: UIProgressView!
@@ -39,20 +40,6 @@ class QuestionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     // MARK: - IB Actions
     
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
@@ -60,6 +47,29 @@ class QuestionViewController: UIViewController {
         guard let currentIndex = singleButtons.firstIndex(of: sender) else { return }
         let currentAnswer = currentAnswers[currentIndex]
         answersChoosen.append(currentAnswer)
+        
+        nextQustion()
+    }
+    
+    @IBAction func multipleAnswerButtonPressed() {
+        let currentAnswers = questions[questionIndex].answers
+        
+        for (multipleSwitch, answer) in zip(multipleSwitches, currentAnswers) {
+            if multipleSwitch.isOn {
+                answersChoosen.append(answer)
+            }
+        }
+        
+        nextQustion()
+    }
+    
+    @IBAction func rangedAnswerButtonPressed() {
+        let currentAnswers = questions[questionIndex].answers
+        let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
+        answersChoosen.append(currentAnswers[index])
+        
+        nextQustion()
+        
     }
     
     // MARK: - Private Methods
@@ -78,11 +88,12 @@ class QuestionViewController: UIViewController {
         quesyionLabel.text = currentQuestion.text
         
         // Calculate progress
-        let totalProgres = Float(questionIndex / questions.count)
+        let totalProgres = Float(questionIndex) / Float(questions.count)
         
         // Set progress for question progress view
         questionProgressView.setProgress(totalProgres, animated: true)
         
+        // Set navigation title
         title = "Вопрос № \(questionIndex + 1) из \(questions.count)"
         
         
@@ -133,4 +144,23 @@ class QuestionViewController: UIViewController {
         rangedLabels.last?.text = answers.last?.text
     }
     
+    // MARK: - Navigation
+    //Show next question or go to the next screen
+    private func nextQustion() {
+        questionIndex += 1
+        
+        if questionIndex < questions.count {
+            updateUI()
+        } else {
+            performSegue(withIdentifier: "resultSegue", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard segue.identifier == "resultSegue" else { return }
+        let resultVC = segue.destination as! ResultsViewController
+        resultVC.responses = answersChoosen
+    }
+   
 }
